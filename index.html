@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meow Manor</title>
+  <link rel="stylesheet" href="./index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+<body>
+
+
+  <!-- navbar start -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <b><a class="navbar-brand text-light" href="#" style="font-family:Special Gothic Condensed One, sans-serif;">Meow Manor</a></b>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./menu.php">Menu</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="cart.php">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </li>
+      </ul>
+
+      <form class="d-flex ms-3" role="search"> 
+  <input class="searchbar me-2" type="search" placeholder="Search" aria-label="Search"/>
+  <button class="butt me-2" type="submit">Search</button>
+  <a href="login.php" class="butt me-2 p-1" style="text-decoration: none;">Login</a>
+  <a href="signup.php" class="butt p-1" style="text-decoration: none;">SignUp</a>
+
+
+</form>
+
+    </div>
+  </div>
+</nav>
+<!-- navbar end -->
+
+<!-- welcome start -->
+
+<div class="blackcats">
+  <img src="./imgs/black-cat-halloween-clip-art-witch-cat-74932175cfb84c3c05d86c15ad63e11e.png">
+</div>
+
+<div class="welcome">
+  <h1>Welcome to Meow Manor</h1>
+  <p> Enjoy delicious coffee, cuddle time with our friendly cats, and 
+      special treats for your furry companions.</p>
+</div>
+
+<!-- welcome end -->
+
+
+<!-- service cards start -->
+ <div class="container-fluid">
+   <h2 class="s text-center  text-primary">Our Services</h2>
+   <div class="row1">
+     <div class="services d-flex">
+       <a href="cat.php">
+         <img class="img" src="./imgs/minnie-mouse-cat-marie-kitten-aristogatos-cute-cat-802ef22de1a7e2085b5a6c0b812ff3bc.png" alt="Cats">
+       </a>
+       <a href="menu.php">
+         <img class="img" src="./imgs/coffee-cup-drink-coffee-aroma-vector-3f57ca03b6c305329be3c71f0eeb645f.png" alt="Menu">
+       </a>
+       <a href="treat.php">
+         <img class="img" src="./imgs/5bbef996278ec-3c64d5e72775916f8810de1b5b36efd0.png" alt="Treats">
+       </a>
+     </div>
+   </div>
+</div>
+
+
+
+<!-- service cards end -->
+
+
+<!-- notice board start -->
+
+<div class="container-fluid">
+  <h2 class="ph text-center "> Price & Operating Hour</h2>
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h4> Price </h4>
+      <p> 2 hours: 10000MMK
+        Subsequent 1/2 hours: 2500MMK / for every additional 30 mins
+           Free complimentary drink, top ups are available to upgrade to tea/coffee
+          Whole day pass: 50000MMK/  with 1 free drink of any choice
+                Weekdays Only (except school holiday)
+                 Subjected to availability</p><br>
+
+                 <h4>Age Requirement</h4>
+                 <p> Kids under  must be accompanied & strictly supervised by adults
+                  Youth above 12 years old may enter the café without adult supervision 
+           but at the sole risk and responsibility of their parents or guardian.
+                    Free entry for children below 1</p><br>
+
+                    <h4>Operationg Hours</h4>
+                    <p>Location: 7 Street, Maubin
+              Monday: 3PM to 9 PM/  Weekdays: 10AM to 9PM
+                     Weekdays: 10am to 9PM
+         Weekend, Public Holiday, School Holiday: 10AM to 10PM</p><br>
+
+         <h4>The Rail Mail</h4>
+         <p> Wednesday: 3PM to 9 PM/   Weekdays: 10AM to 9PM
+      Weekend, Public Holiday, School Holiday: 10AM to 10PM</p>
+
+    </div>
+  </div>
+</div>
+
+<!-- notice board end -->
+
+
+<!-- menu start -->
+<div class="container">
+  <h2 class="s text-center  text-primary">Menu</h2>
+  <div class="row3">
+
+<div class="menu">
+  <h1 class="mt">Meow Manor<br><span>Coffee</span></h1>
+  <div class="mcard d-flex ">
+    <ul class="mlist p-3">
+      <li>Expresso</li>
+      <li>Double Expresso</li>
+      <li>Latte</li>
+      <li>Americano</li>
+      <li>Macchiato</li>
+      <li>Flat White</li>
+      <li>Cappuccino</li>
+    </ul>
+
+    <ul class="mlist p-3">
+      <li>10000MMK</li>
+      <li>12000MMK</li>
+      <li>9000MMK</li>
+      <li>59000MMK</li>
+      <li>8000MMK</li>
+      <li>10000MMK</li>
+      <li>15000MMK</li>
+    </ul>
+
+
+    <ul class="mbuy p-3">
+      <li><button onclick="addToCart('Expresso',10000 )" class="butbuy">Buy</button></li>
+      <li><button onclick="addToCart('Double Expresso',12000 )" class="butbuy">Buy</button></li>
+      <li><button onclick="addToCart('Latte',9000 )" class="butbuy">Buy</button></li>
+      <li><button onclick="addToCart('Americano',59000 )" class="butbuy">Buy</button></li>
+      <li><button onclick="addToCart('Macchiato',8000 )" class="butbuy">Buy</button></li>
+      <li><button onclick="addToCart('Flat White',10000 )" class="butbuy">Buy</button></li>
+      <li><button onclick="addToCart('Cappuccino',15000 )" class="butbuy">Buy</button></li>
+      
+    </ul>
+
+
+
+  </div>
+
+  <div class="menu">
+  <h1 class="mc">Cakes</h1>
+  <div class="mcardd d-flex mt-5">
+    <ul class="mlist p-3">
+      <li>Chocolate Cake</li>
+      <li>Vanilla Sponge Cake</li>
+      <li> Red Velvet Cake</li>
+      <li> Strawberry Shortcake</li>
+    </ul>
+
+    <ul class="mlist p-3">
+      <li>20000MMK</li>
+      <li>21000MMK</li>
+      <li>22000MMK</li>
+      <li>21000MMK</li>
+     
+    </ul>
+
+
+    <ul class="mbuyy p-3">
+       <li><button onclick="addToCart('Chocolate Cake',20000 )" class="butbuyy">Buy</button></li>
+       <li><button onclick="addToCart('Vanilla Sponge Cake',21000 )" class="butbuyy">Buy</button></li>
+       <li><button onclick="addToCart('Red Velvet Cake',22000 )" class="butbuyy">Buy</button></li>
+       <li><button onclick="addToCart('Strawberry Shortcake',21000 )" class="butbuyy">Buy</button></li>
+      
+      
+    </ul>
+
+
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+    function addToCart(name, price) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      let existing = cart.find(item => item.name === name);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ name, price, qty: 1 });
+      }
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert(name + ' added to cart!');
+    }
+  </script>
+
+<!-- menu end -->
+
+<!-- treat start -->
+
+<div class="container-fluid">
+  <h2 class="ph text-center "> Treats For Cats</h2>
+  <div class="row4">
+    <div class="treats d-flex">
+
+      <div class="card me-5 text-center" style="width: 18rem; background-color: rgb(124, 189, 250); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+">
+  <img src="./imgs/download.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Whiskas Tuna</h5>
+    <p class="card-text">8000MMK</p>
+    <button onclick="addToCart('Whiskas Tuna',8000 )" class="buybtn">Buy</button>
+  </div>
+</div>
+
+<div class="card me-5 text-center" style="width: 18rem; background-color: rgb(124, 189, 250); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+">
+  <img src="./imgs/downloadd.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"> Ciao Churu Tuna</h5>
+    <p class="card-text">8000MMK</p>
+    <button onclick="addToCart('Ciao Churu Tuna',8000 )" class="buybtn">Buy</button>
+  </div>
+</div>
+
+<div class="card me-5 text-center" style="width: 18rem; background-color: rgb(124, 189, 250); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+">
+  <img src="./imgs/Birdie-And-Louie-Wet-Cat-Food-Tuna-And-Olives-849547022133.avif" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"> Birdie & Louie</h5>
+    <p class="card-text">8000MMK</p>
+  <button onclick="addToCart('Birdie & Louie',8000 )" class="buybtn">Buy</button>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+   <div class="row5">
+    <div class="treats d-flex">
+
+      <div class="card me-5 text-center" style="width: 18rem; background-color: rgb(124, 189, 250); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+">
+  <img src="./imgs/pink-salmon-smoked-salmon-fish-steak-others-bb96bc3b6b0467a0535bcf1b2d6e3a24.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Raw Tuna</h5>
+    <p class="card-text">8000MMK</p>
+     <button onclick="addToCart('Raw Tuna',8000 )" class="buybtn">Buy</button>
+  </div>
+</div>
+
+<div class="card me-5 text-center" style="width: 18rem; background-color: rgb(124, 189, 250); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+">
+  <img src="./imgs/fish-clip-art-fish-png-fd8540791e634779ab5619cad0c4eaf9.png" class="card-img-top " alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Fried Fish</h5>
+    <p class="card-text">8000MMK</p>
+     <button onclick="addToCart('Fried Fish',8000 )" class="buybtn">Buy</button>
+  </div>
+</div>
+
+<div class="catfood card me-5 text-center" style="width: 18rem; background-color: rgb(124, 189, 250); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);">
+  <img src="./imgs/chicken-egg-boiled-egg-ramen-boiled-egg-83d3c4694ca2d64bb41225b0db5ecc7d.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Egg</h5>
+    <p class="card-text">8000MMK</p>
+     <button onclick="addToCart('Egg',8000 )" class="buybtn">Buy</button>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<script>
+    function addToCart(name, price) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      let existing = cart.find(item => item.name === name);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ name, price, qty: 1 });
+      }
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert(name + ' added to cart!');
+    }
+  </script>
+
+
+<!-- treat end -->
+
+
+<!-- hour start -->
+<div class="container">
+ <h2 class="ph text-center "> Hours Of Stay</h2>
+ <div class="row8 d-flex">
+<div class="hour d-flex">
+  <form>
+    <label><input type="radio" name="hours" value="1" checked> 1 hour</label>
+    <label><input type="radio" name="hours" value="2"> 2 hours</label>
+    <label><input type="radio" name="hours" value="3"> 3 hours</label>
+    <label><input type="radio" name="hours" value="4"> 4 hours</label>
+    <button type="button" class="add" onclick="addHourToCart()">Add</button>
+  </form>
+
+  <ul class="hpp pt-3 " style="list-style: none;">
+      <li class="k mb-2">5000MMK</li>
+      <li class="k mb-2">10000MMK</li>
+      <li class="k mb-2">15000MMK</li>
+      <li class="k mb-2">20000MMK</li>
+     
+    </ul>
+</div>
+
+
+</div>
+</div>
+
+
+<script>
+function addHourToCart() {
+  const selected = document.querySelector('input[name="hours"]:checked').value;
+  const name = `${selected} Hour Visit`;
+  const price = selected * 5000;
+
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  let existing = cart.find(item => item.name === name);
+
+  if (existing) {
+    existing.qty += 1;
+  } else {
+    cart.push({ name, price, qty: 1 });
+  }
+
+  localStorage.setItem('cart', JSON.stringify(cart));
+  alert(name + ' added to cart!');
+}
+</script>
+
+
+
+
+  <!-- hour end -->
+
+  <!-- cat pics start -->
+
+  <h2 class="ph text-center "> Meet The Cats</h2>
+
+  
+  <div class="top-row">
+    <img src="./imgs/woman-enjoying-her-relaxation-ritual.jpg" class="cimg">
+    <img src="./imgs/selective-focus-closeup-shot-gray-furry-tabby-cat-sitting-wooden-chair.jpg" class="cimg">
+  </div>
+
+  
+  <div class="cat-gallery">
+    
+    <div class="column">
+      <img src="./imgs/side-view-japanese-woman-with-cat.jpg" class="cimg">
+      <img src="./imgs/yeti1.jpg" class="cimg">
+      <img src="./imgs/cat-2151382_1280.jpg" class="cimg">
+    </div>
+
+    
+    <div class="middle-column">
+      <img src="./imgs/cat-932846_1280.jpg" class="center-img">
+    </div>
+
+    
+    <div class="column">
+      <img src="./imgs/cute-cat-spending-time-outdoors.jpg" class="cimg">
+      <img src="./imgs/photo_2025-06-02_16-11-57.jpg" class="cimg">
+      <img src="./imgs/cat-window.jpg" class="cimg">
+    </div>
+  </div>
+
+ 
+  <div class="bottom-row">
+    <img src="./imgs/brown-kitten-black-kitten-playing-brown-sofa-near-pillows.jpg" class="cimg">
+    <img src="./imgs/cat-7997170_1280.jpg" class="cimg">
+    
+    
+  </div>
+
+
+<!-- cat pics end -->
+
+
+
+
+
+<!-- contact start -->
+
+<div class="contact text-center">
+  <h2>Contact Us</h2>
+  <p> Have a question for us?<br> Contact us an email at info meowmanor777@gmail.com</p>
+</div>
+
+<!-- contact end -->
+
+
+<!-- footer start -->
+
+
+<div class="container-fluid">
+  <div class="rowf">
+      <div class="col-sm-6">
+        <h1> Meow Manor </h1>
+        <p class="f">Location: 7street, Maubin <br> <i class="fa-solid fa-envelope me-2"></i>:meowmanor777@gmail.com<br><i class="fa-solid fa-phone me-2"></i>: 09886423570<br> <b>Follow Us:</b><br> <i class="fa-brands fa-square-instagram me-2 fs-3" style="color:black;"></i> <i class="fa-brands fa-square-facebook me-2 fs-3" style="color: #0650d0;"></i> <i class="fa-brands fa-square-twitter me-2 fs-3" style="color:black;"></i> </i> <i class="fa-brands fa-tiktok me-2 fs-3" style="color:black;"></i> </p>
+      </div>
+
+      <div class="col-sm-6">
+        <img class="fcat" src="./imgs/marie-kitten-cat-drawing-cat-marie-b1350d983b771880a97be93aba52e373.png" style="width:325px;" alt="">
+      </div>
+
+    </div>
+  </div>
+
+<!-- footer end -->
+
+</body>
+</html>
